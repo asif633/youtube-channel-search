@@ -1,0 +1,23 @@
+<div class="container mb-5" *ngIf="video">
+  <div class="card">
+    <div class="card-header">
+      {{video.title}}
+    </div>
+    <div class="card-block">
+      <div class="row">
+        <div class="col-md-3">
+          <img [src]="video.thumbnails.default.url" height="100" width="200" /> 
+          <h4>Default</h4>
+        </div>
+        <div class="col-md-4">
+          <img [src]="video.thumbnails.medium.url" height="150" width="250" />
+          <h4>Medium</h4>
+        </div>
+        <div class="col-md-5">
+          <img [src]="video.thumbnails.high.url" height="300" width="400" />
+          <h4>High</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
